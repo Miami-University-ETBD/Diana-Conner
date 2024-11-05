@@ -5,7 +5,6 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Mouser's Cheese Cellar</title>
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
    <style>
        .header-bg {
            background-color: #ffab40; /* dark orange background */
@@ -105,7 +104,30 @@
    </div>
    <div class="video-container responsive-video">
     <iframe width="853" height="480" src="https://www.youtube.com/embed/xvs8zGLJe-U?si=G9547LhiTq0XZjNA" frameborder="0" allowfullscreen></iframe>
-  </div>
+  </div><div id="radio-section" class="section container">
+    <h2>Select Your Favorite Cheese!</h2>
+    <form>
+        <p>
+            <label>
+                <input name="Cheese" type="radio" value="Cheddar" onclick="displayCheese()"/>
+                <span>Cheddar</span>
+            </label>
+        </p>
+        <p>
+            <label>
+                <input name="Cheese" type="radio" value="Swiss" onclick="displayCheese()"/>
+                <span>Swiss</span>
+            </label>
+        </p>
+        <p>
+            <label>
+                <input name="Cheese" type="radio" value="Colby Jack" onclick="displayCheese()"/>
+                <span>Colby Jack</span>
+            </label>
+        </p>
+    </form>
+    <div id="Cheese-response"></div>
+</div>
    <div class="row">
 
 
@@ -155,7 +177,67 @@
        </div>
    </div>
 
+     <!-- Javascript Section -->
+   
+   <script>
+    // Initialize modal
+    document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.modal');
+        var instances = M.Modal.init(elems);
+    });
+    // Function to display selected pastry
+    function displayCheese(event) {
+        const selectedCheese = document.querySelector('input[name="Cheese"]:checked').value;
+        document.getElementById('Cheese-response').innerText = `You selected: ${selectedCheese}`;
+    }
+    // Function to handle email subscription form submission
+    function submitEmail(event) {
+        event.preventDefault();
+        const email = document.getElementById('email').value;
+        document.getElementById('email-response').innerText = `Thank you for subscribing! Updates will be sent to: ${email}`;
+        document.getElementById('email').value = ''; // Clear the input
 
+
+        // Display modal
+        const modalText = document.getElementById('modal-content-text');
+        modalText.innerText = `Thank you for subscribing! Updates will be sent to: ${email}`;
+        const modal = M.Modal.getInstance(document.getElementById('modal1'));
+        modal.open();
+    }
+</script>
+<!-- Email Feedback Section -->
+<div id="feedback-section" class="section container, section-bg">
+    <h2>Subscribe to the Cheeserton Newsletter for more updates!</h2>
+    <form onsubmit="submitEmail(event)">
+        <div class="input-field">
+            <input id="email" type="email" required>
+            <label for="email">Email</label>
+        </div>
+        <button type="submit" class="btn waves-effect waves-light">Subscribe</button>
+    </form>
+    <div id="email-response"></div>
+</div>
+  <script>
+     document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.collapsible');
+    var instances = M.Collapsible.init(elems, options);
+  });
+  </script>
+<h3> We're hiring! Here are some bonuses you get when you spend your life at Mouser's Cheese Cellar!</h1>
+<ul class="collapsible, .section-bg">
+    <li>
+      <div class="collapsible-header"><i class="material-icons"> Health Benefits</div>
+      <div class="collapsible-body"><span>A pat on the back, a bandaid, or an ice pack.</span></div>
+    </li>
+    <li>
+      <div class="collapsible-header"><i class="material-icons">Pay</div>
+      <div class="collapsible-body"><span>2-5 Cents an Hour based on your position. </span></div>
+    </li>
+    <li>
+      <div class="collapsible-header"><i class="material-icons">Fufillment</div>
+      <div class="collapsible-body"><span>Mice who work for us feel somewhat fufilled in their short lifetimes.</span></div>
+    </li>
+  </ul>
    <!-- Footer -->
    <footer class="page-footer header-bg">
        <div class="container">
@@ -166,5 +248,6 @@
            </div>
        </div>
    </footer>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
 </body>
 </html>
