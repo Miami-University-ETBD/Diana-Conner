@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Mouser's Cheese Cellar</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+   <style>
+       .header-bg {
+           background-color: #ffab40; /* dark orange background */
+       }
+       .section-bg {
+           background-color: #ffd180; /* Light orange background */
+       }
+       .shadow {
+           box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+       }
+       .table-header {
+           background-color: #ffd740; /* Light orange background */
+           color: white;
+       }
+   </style>
+</head>
+<body>
+
+
+   <!-- Navbar -->
+   <nav class="header-bg" >
+       <div class="nav-wrapper right">
+<ul>
+    <li> <a href="Jquery.html"> JQuery</a></li>
+    <li><a href="materialize.html">Materialize</a></li>  
+   <li><a href="cheese_raffle.html">Cheese Raffle</a></li>
+   <li> <a href="about_us.html".html">About Us</a></li>
+  <li> <a href="index.html">Home Page</a></li>
+          
+           </ul>
+       </div>
+   </div>
+   </nav>
+
+
+
+
+   <!-- Header Section -->
+   <div class="section header-bg center-align">
+       <h1 class="white-text">Mouser's Cheese Cellar</h1>
+       <p class="white-text">The Best Cheese in the Midwest!</p>
+   </div>
+
+
+   <!-- About Us Section -->
+   <div id="about" class="section section-bg">
+       <div class="container">
+           <div class="row">
+               <div class="col s12 m6">
+              
+                   <h2>Our Mission</h2>
+                   <p>We are an all-inclusive rat & mouse-ran delivery service. Our primary goal is to deliver you the best cheese at the best prices.</p>
+               </div>
+               <div class="col s12 m6">
+              <img src="images/promotional.material.png" alt="Promo Cheese Material" class="circle responsive-img shadow">
+               </div>
+           </div>
+       </div>
+   </div>
+
+
+   <!-- Menu Section -->
+   <div id="menu" class="section">
+       <div class="container">
+           <h2>Mouser's Celebrity Favorites</h2>
+           <table class="highlight">
+               <thead class="table-header">
+                   <tr>
+                       <th>Celebrity</th>
+                       <th>Favorite Cheese</th>
+                       <th>Cheese Ratings</th>
+                   </tr>
+               </thead>
+               <tbody>
+                   <tr>
+                       <td>Mr. Bombastic, A.K.A Biggy Cheese</td>
+                       <td>Swiss Cheese</td>
+                       <td> "This cheese is so fantastic."</td>
+                   </tr>
+                   <tr>
+                       <td>Stuart Little</td>
+                       <td>Cheddar Cheese</td>
+                       <td>"This cheese is better than the stuff they gave me at the orphanage!"</td>
+                   </tr>
+                   <tr>
+                       <td>Geronimo Stilton</td>
+                       <td>Mozzarella</td>
+                       <td>"Holy Cheese! This is squeaktacular!"</td>
+                   </tr>
+                   <tr>
+                       <td>Pizza Rat</td>
+                       <td>Pepperoni & Cheese Cubes</td>
+                       <td>"I get it delivered up to my penthouse every time it's available. 20/10."</td>
+                   </tr>
+               </tbody>
+           </table>
+       </div>
+   </div>
+   <div class="video-container responsive-video">
+    <iframe width="853" height="480" src="https://www.youtube.com/embed/xvs8zGLJe-U?si=G9547LhiTq0XZjNA" frameborder="0" allowfullscreen></iframe>
+  </div><div id="radio-section" class="section container">
+    <h2>Select Your Favorite Cheese!</h2>
+    <form>
+        <p>
+            <label>
+                <input name="Cheese" type="radio" value="Cheddar" onclick="displayCheese()"/>
+                <span>Cheddar</span>
+            </label>
+        </p>
+        <p>
+            <label>
+                <input name="Cheese" type="radio" value="Swiss" onclick="displayCheese()"/>
+                <span>Swiss</span>
+            </label>
+        </p>
+        <p>
+            <label>
+                <input name="Cheese" type="radio" value="Colby Jack" onclick="displayCheese()"/>
+                <span>Colby Jack</span>
+            </label>
+        </p>
+    </form>
+    <div id="Cheese-response"></div>
+</div>
+   <div class="row">
+
+
+       <div class="col s4">
+           <img src="images/mouse.thumbs.up.png" alt="Mouse Thumbs Up" class="responsive-img shadow">
+           <blockquote>Squeak!</blockquote>
+       </div>
+       <div class="col s4">
+           <img src="images/mouse.family.png" alt="Happy Mouse Family" class="responsive-img shadow">
+           <blockquote>Our Family Loves Cheese!</blockquote>
+       </div>
+       <div class="col s4">
+           <img src="images/anthro.mouse.LOVES.cheese.png" alt="Happy Mouse" class="responsive-img shadow">
+           <blockquote>Cheddar is Awesome!</blockquote>
+       </div>
+      </div>
+   <!-- Contact Section -->
+   <div id="contact" class="section section-bg">
+       <div class="container">
+           <h2>Contact Us</h2>
+           <div class="row">
+               <div class="col s12 m6">
+                   <form>
+                       <div class="input-field">
+                           <input id="name" type="text" class="validate">
+                           <label for="name">Name</label>
+                       </div>
+                       <div class="input-field">
+                           <input id="email" type="email" class="validate">
+                           <label for="email">Email</label>
+                       </div>
+                       <div class="input-field">
+                           <textarea id="message" class="materialize-textarea"></textarea>
+                           <label for="message">Message</label>
+                       </div>
+                       <button type="submit" class="btn waves-effect waves-light">Send</button>
+                   </form>
+               </div>
+               <div class="col s12 m6">
+                   <h5>Visit Our Factory, See Our Work Family!</h5>
+                   <p>584 Abandoned Cheese Factory Way, <br>
+                    Westcheeserton, MA, 02128 </p>
+                   <p><i class="material-icons"><b>phone</b></i> 888-MOUSE-CHEESE </p>
+                   <p><i class="material-icons"><b>email</b></i> mrmouserceo@mousertons.org</p>
+               </div>
+           </div>
+       </div>
+   </div>
+
+     <!-- Javascript Section -->
+   
+   <script>
+    // Initialize modal
+    document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.modal');
+        var instances = M.Modal.init(elems);
+    });
+    // Function to display selected pastry
+    function displayCheese(event) {
+        const selectedCheese = document.querySelector('input[name="Cheese"]:checked').value;
+        document.getElementById('Cheese-response').innerText = `You selected: ${selectedCheese}`;
+    }
+    // Function to handle email subscription form submission
+    function submitEmail(event) {
+        event.preventDefault();
+        const email = document.getElementById('email').value;
+        document.getElementById('email-response').innerText = `Thank you for subscribing! Updates will be sent to: ${email}`;
+        document.getElementById('email').value = ''; // Clear the input
+
+
+        // Display modal
+        const modalText = document.getElementById('modal-content-text');
+        modalText.innerText = `Thank you for subscribing! Updates will be sent to: ${email}`;
+        const modal = M.Modal.getInstance(document.getElementById('modal1'));
+        modal.open();
+    }
+</script>
+<!-- Email Feedback Section -->
+<div id="feedback-section" class="section container, section-bg">
+    <h2>Subscribe to the Cheeserton Newsletter for more updates!</h2>
+    <form onsubmit="submitEmail(event)">
+        <div class="input-field">
+            <input id="email" type="email" required>
+            <label for="email">Email</label>
+        </div>
+        <button type="submit" class="btn waves-effect waves-light">Subscribe</button>
+    </form>
+    <div id="email-response"></div>
+</div>
+  <script>
+     document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.collapsible');
+    var instances = M.Collapsible.init(elems);
+  });
+  </script>
+<h3> We're hiring! Here are some bonuses you get when you spend your life at Mouser's Cheese Cellar!</h1>
+<ul class="collapsible section-bg">
+    <li>
+      <div class="collapsible-header"><i class="material-icons"></i> Health Benefits</div>
+      <div class="collapsible-body"><span>A pat on the back, a bandaid, or an ice pack.</span></div>
+    </li>
+    <li>
+      <div class="collapsible-header"><i class="material-icons"></i>Pay</div>
+      <div class="collapsible-body"><span>2-5 Cents an Hour based on your position. </span></div>
+    </li>
+    <li>
+      <div class="collapsible-header"><i class="material-icons"></i>Fufillment</div>
+      <div class="collapsible-body"><span>Mice who work for us feel somewhat fufilled in their short lifetimes.</span></div>
+    </li>
+  </ul>
+   <!-- Footer -->
+   <footer class="page-footer header-bg">
+       <div class="container">
+           <div class="row">
+               <div class="col s12 center-align">
+                   <p class="white-text">&copy; 2024 Mouser's Cheese Cellar. All Cheese Reserved.</p>
+               </div>
+           </div>
+       </div>
+   </footer>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+</html>

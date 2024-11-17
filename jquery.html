@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<head>
+    <title> Mouser's Cheese Cellar </title>
+    <link rel="stylesheet" href="styles.css" 
+    <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <div class="topnav">
+      <a href="index.html">Home Page</a>
+      <a href="about_us.html">About Us</a>
+      <a href="cheese_raffle.html">Cheese Raffle</a>
+      <a href="materialize.html"> Materialize </a>
+      <a class="active" href="jquery.html"> JQuery</a>
+    </div>
+    <link rel="icon" type="image/x-icon" href='file:///C:/Users/Diana/Downloads/favicon.ico'>
+    </head>
+    <body>
+<script>
+$(document).ready(function(){
+  $("button").click(function(){
+    $("#div1").fadeTo("slow", 0.15);
+    $("#div2").fadeTo("slow", 0.4);
+    $("#div3").fadeTo("slow", 0.7);
+  });
+});
+</script>
+
+    <h1>Our Competitors VS Mr. Mouser's Cheese Cellar quality!</h1>
+    
+    <button>Gross, right? CLICK ME to hide our competitor's cheese cubes.</button><br><br>
+    
+    <div id="div1" href="moldycheese1"><img src="images/moldycheese1.png" width="500" height="500"> </div><br>
+    <div id="div2" href="moldycheese2"><img src="images/moldycheese2.png" width="500" height="500"></div><br>
+    <div id="div3" href="yummycheese1"><img src="images/ourcheeseprestine.png"width="500" height="500"></div>
+<!-- Second Jquery -->
+ 
+<script>
+    $(document).ready(function(){
+      $("button1").click(function(){
+        $("#p1").css("color", "brown",).slideUp(2000).slideDown(2000);
+      });
+    });
+    </script>
+    <p id="p1"> <b>Our Cheese is all you need! </b></p>
+
+    <!-- Third Jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+    $(document).ready(function(){
+      $("button1").click(function(){
+        $("h1, h2, p").addClass("brown");
+        $("div").addClass("important");
+      });
+    });
+    </script>
+    <style>
+    .important {
+      font-weight: bold;
+      font-size: xx-large;
+    }
+    
+    .brown {
+        color:#7b4b00; outline-style: dotted; outline-color: #d3b565; background-color:#ffdf80 
+    }
+    </style>
+<br> 
+
+  <button1><mark>!!!CLICK ME!!!</mark></button1>
+    <h1>"The Mouser's cheese is so prestine, you'll be writing home about it."</h1>
+    <h2>-A Valued Customer</h2>
+    
+    <p> <b>NOTHING BEATS OUR CHEESE </b></p>
+    <p>No returns, because we know it's just <b>THAT</b> good.</p>
+    
+    <div>Use Our Delivery Services Now!</div><br>
+    
+    </body>
+    </html>

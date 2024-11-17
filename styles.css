@@ -1,5 +1,9 @@
-/*HOMEPAGE CSS SHEET*/
+/*header style*/
+#header {outline-style: dotted; outline-color: #d3b565; background-color:#ffdf80;
+  color: #4c4c4b; font-family: bookman old style; font-size: 14px; padding-bottom: 12px; padding-top: 15px; inline-size: 300px }
+/*HOMEPAGE INDEX CSS SHEET*/
 .div1{
+img {border-radius: 8px; display: block; margin-left: auto; margin-right: auto; width: 25%;}
 p1 {outline-style: dotted; outline-color: #d3b565; background-color:#ffdf80}
 p1 {color: #4c4c4b; font-family: bookman old style;}
 body {background-color: #ffebcd;}
@@ -21,6 +25,7 @@ dt {color: #4c4c4b; font-family: palatino linotype }
 dt { background: #ffd24d; opacity: 0.7; padding: 5px;}
 dt {outline-style: dotted; outline-color:white}
 dd {color: #4c4c4b; font-family: bookman old style}
+table {width:100%}
 th {background-color:#e1b166 ;
   color: white;}
 tr:hover {background-color:#e7c084;}
@@ -35,8 +40,7 @@ aside {width: 25%;  padding-left: 15px;  float: left;
 }
   /*ABOUT US STYLE SHEET*/
   .mydiv {
-  p1 {outline-style: dotted; outline-color: #d3b565; background-color:#ffdf80}
-p1 {color: #4c4c4b; font-family: bookman old style;}
+    img {border-radius: 50px; display: block; margin-left: auto; margin-right: auto; width: 25%;}
 body {background-color: #ffebcd;}
 h1   {color:#7b4b00; font-size:45px; font-family: georgia;}
 h1  {background-color:#ffd24d; opacity: 0.7; 
@@ -67,16 +71,13 @@ tr {background-color:#e7c084;}
 table { border-collapse: collapse; width: 100%;}
 table, th, td {
   border: 2px solid; border-color: white; color: #4c4c4b;}
-p3 {color: #526a40; background-color: #b5ea8c; font-size:25px; font-family: verdana;  }
-p4 {font-size: 12px; color: #526a40; background-color:#b5ea8c;}
-p5 {font-family: verdana;  color: #526a40;}
 ul {font-family: verdana; list-style-position: inside; text-align: center; color: #526a40; outline-style: dashed; outline-color: #b5ea8c}
 footer {outline-style: dotted; outline-color: #d3b565;  background-color:#ffdf80}
   }
 /*CHEESE RAFFLE STYLE SHEET*/
 .div3{
-p1 {outline-style: dotted; outline-color: #d3b565; background-color:#ffdf80}
-p1 {color: #4c4c4b; font-family: bookman old style;}
+  img {border-radius: 50%; display: block; margin-left: auto; margin-right: auto; width: 50%;}
+  img:hover { transform: scaleX(-1);}
 body {background-color: #ffebcd;}
 h1   {color:#7b4b00; font-size:45px; font-family: georgia;}
 h1  {background-color:#ffd24d; opacity: 0.7; 
@@ -107,9 +108,28 @@ tr {background-color:#e7c084;}
 table { border-collapse: collapse; width: 100%;}
 table, th, td {
   border: 2px solid; border-color: white; color: #4c4c4b;}
-p4 {font-size: 12px}
-p3 {color: #526a40; background-color: #b5ea8c; font-size:25px; font-family: verdana;  }
 ul {font-family: verdana; list-style-position: inside; text-align: center; color: #526a40; outline-style: dashed; outline-color: #b5ea8c}
 footer {outline-style: dotted; outline-color: #d3b565;  background-color:#ffdf80}
 ol {color: #4c4c4b; font-family: bookman old style}
 }
+/*navigation bar for index page*/
+.topnav{
+    margin: 0;
+    font-family: bookman old style; overflow: hidden;}
+  
+  a {float: right; color: #7b4b00; text-align: center; padding: 14px 16px; text-decoration: none; font-size: 17px;}
+  
+   a:hover {background-color: #ffebcd; color: black;}
+  
+  a.active { background-color: #d3b565; color: #4c4c4b;} 
+  /*end nav bar css*/
+
+  /*adventuremouse code*/
+ #avh {color: #526a40; background-color: #b5ea8c; font-size:35px; font-family: verdana;  } 
+ #adventuremouse {font-size: 12px; color: #526a40; 
+  font-family: verdana;  color: #526a40;}
+ /* js stuff */
+ #java {outline-style: dotted; outline-color: #d3b565; background-color:#ffdf80;
+  color: #4c4c4b; font-family: bookman old style; font-size: 14px; padding-bottom: 12px; padding-top: 15px; inline-size: 300px }
+  button {color:#7b4b00; background-color: #ffd24d; outline: solid; outline-color:#ffebcd;}
+  #java2 { font-family: bookman old style; float: left}
